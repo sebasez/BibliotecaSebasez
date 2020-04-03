@@ -1,4 +1,4 @@
-# BlibliotecaSebasez
+# Bliblioteca Sebasez
 Prueba Técnica BlueSoft
 
 ## Paso 1 - Clonar repositorio y abrir Visual Studio 2019
