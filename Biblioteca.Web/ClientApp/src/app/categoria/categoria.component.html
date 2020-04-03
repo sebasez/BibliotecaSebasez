@@ -1,0 +1,24 @@
+<h1 id="tableLabel">Categorias de libros</h1>
+
+<p *ngIf="!categorias"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="categorias">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Fecha nacimiento</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let categoria of categorias">
+      <td>{{ categoria.nombre }}</td>
+      <td>{{ categoria.descripcion }}</td>
+      <td>
+        <a href="#" class="btn btn-info">Adicionar</a> |
+        <a href="#" class="btn btn-primary">Editar</a> |
+        <a href="#" class="btn btn-info">Eliminar</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

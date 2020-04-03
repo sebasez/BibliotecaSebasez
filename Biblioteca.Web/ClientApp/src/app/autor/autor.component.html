@@ -1,0 +1,25 @@
+<h1 id="tableLabel">Listado de autores</h1>
+
+<p *ngIf="!autores"><em>Loading...</em></p>
+<a class="btn btn-info" [routerLink]="['/crea-autor']">Adicionar autor</a>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="autores">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Fecha nacimiento</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let autor of autores">
+      <td>{{ autor.nombreCompleto }}</td>
+      <td>{{ autor.fechaNacimiento | date:'dd/MM/yyyy'}}</td>
+      <td>
+        <a class="btn btn-primary" [routerLink]="['/edita-autor',autor.id]">Editar</a> |
+        <!--<a href="#" class="btn btn-info">Adicionar</a> |
+        <a href="#" class="btn btn-primary">Editar</a> |-->
+        <a href="#" class="btn btn-danger">Eliminar</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
