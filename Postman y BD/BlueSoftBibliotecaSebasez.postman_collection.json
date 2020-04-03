@@ -1,0 +1,448 @@
+{
+	"info": {
+		"_postman_id": "b48a1fbf-bb4b-41c6-aa63-f45f2d8e486a",
+		"name": "BlueSoftBibliotecaSebasez",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Autor",
+			"item": [
+				{
+					"name": "Get Autor Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44386/api/autor/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"autor",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Autor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Gabriel\",\n    \"apellidos\": \"Garcia Marquez\",\n    \"FechaNacimiento\": \"1969-02-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44386/api/autor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Autor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\": \"Gabriel\",\r\n        \"apellidos\": \"García Marquez\",\r\n        \"fechaNacimiento\": \"1927-03-06T00:00:00\",\r\n        \"nombreCompleto\": \"GABRIEL GARCIA MARQUEZ\",\r\n        \"id\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44386/api/autor/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"autor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Autor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44386/api/autor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"autor"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "Get Categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44386/api/categoria/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"categoria",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Cateroria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Novela\",\n    \"descripcion\": \"Narración en prosa, generalmente extensa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44386/api/categoria/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"categoria",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Ciencia Ficción\",\r\n    \"descripcion\": \"Ciencia ficción es la denominación de uno de los géneros derivados de la literatura de ficción\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44386/api/categoria/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"categoria",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44386/api/categoria/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"categoria",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Libro",
+			"item": [
+				{
+					"name": "Get Libro",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44386/api/libro/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"libro",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Libro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombreLibro\": \"Cien años de soledad\",\n    \"isbn\": \"681768768\",\n    \"autorId\": 1,\n    \"categoriaId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44386/api/libro",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"libro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Libro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Libro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44386/api/libro",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"libro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Libro",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44386/api/buscar/c",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44386",
+							"path": [
+								"api",
+								"buscar",
+								"c"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "https://localhost:5001/connect/authorize/callback",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "sebasez@outlook.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1Q2w3e4r%T",
+									"type": "text"
+								},
+								{
+									"key": "cliente_id",
+									"value": "BibliotecaSebasez",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "client_secret",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "scope",
+									"value": "openid BibliotecaSebasez",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:5001/connect/authorize/callback",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"connect",
+								"authorize",
+								"callback"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9c3238ba-5ff9-4044-8424-69c24b142491",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "01c823db-dd2b-4910-b2d7-75c4aa03eac4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
